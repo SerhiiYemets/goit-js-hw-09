@@ -17,6 +17,7 @@
 @import url('./back-link.css');
 @import url('./footer.css');
 
+
 a {
   text-decoration: none;
 }
@@ -88,9 +89,11 @@ body {
 .feedback-form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  max-width: 400px;
-  margin: 0 auto;
+  gap: 8px;
+  width: 408px;
+  height: 296px;
+  border-radius: 8px;
+  padding: 24px;
 }
 
 .feedback-form label {
@@ -103,13 +106,19 @@ body {
 .feedback-form textarea {
   padding: 8px;
   font-size: 16px;
+  border-radius: 8px;
 }
 
 .feedback-form button {
-  padding: 10px;
-  background-color: #007bff;
+  background-color: #4e75ff;;
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
 }
+
+
 
