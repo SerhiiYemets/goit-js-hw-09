@@ -17,3 +17,70 @@
 @import url('./back-link.css');
 @import url('./footer.css');
 
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+button {
+  margin: 0;
+  border: 0;
+}
+
+body {
+  height: 100vh;
+  margin: 0 auto;
+  width: 1128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  margin-left: 156px;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px
+}
+
+.gallery-image {
+  scale: 1;
+  transition: scale, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
+  cursor: url(../other/custom-pointer.png), auto;
+}
+
+.gallery-link:hover .gallery-image,
+.gallery-link:focus .gallery-image {
+  scale: 1.1;
+}
