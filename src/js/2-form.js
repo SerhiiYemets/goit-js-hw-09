@@ -30,15 +30,13 @@ form.addEventListener("input", (event) => {
     localStorage.setItem(localStorageKey, JSON.stringify(formData));
 });
 
-
-
-    form.addEventListener("submit", (event) => {
-        event.preventDefault();
-
-        if (!formData.email.trim() || !formData.message.trim()) {
-            alert("Fill please all fields");
-            return;
-        }
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    
+    if (!formData.email.trim() || !formData.message.trim()) {
+        alert("Fill please all fields");
+        return;
+    }
 console.log("Submitted formData:", formData);
 
 form.reset();
